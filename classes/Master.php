@@ -293,7 +293,7 @@ if($getResult["status"] == 2){
 				//Set mailer to use smtp
 				$mail->isSMTP();
 				//define smtp host
-				$mail->Host = "smtp.gmail.com";
+				$mail->Host = "smtp.mail.yahoo.com";
 				//enable smtp authentication
 				$mail->SMTPAuth = "true";
 				//set type of encryption (ssl/tls)
@@ -301,13 +301,13 @@ if($getResult["status"] == 2){
 				//set port to connect smtp
 				$mail->Port = '587';
 				//set gmail username
-				$mail->Username = 'nocumadoxx@gmail.com';
+				$mail->Username = 'harveygultiano29@yahoo.com';
 				//set gmail password
-				$mail->Password = 'tjmgrybklskwxtia';
+				$mail->Password = 'vpbmrxghjjccbmyt';
 				//set email subject
-				$mail->Subject = 'Test Email Using PHPMailer';
+				$mail->Subject = 'Dental Appointment Status';
 				//set sender email
-				$mail->setFrom('nocumadoxx@gmail.com');
+				$mail->setFrom('harveygultiano29@yahoo.com');
 				//Enable HTML
 				$mail->isHTML(true);
 				//Email body

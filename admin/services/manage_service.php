@@ -27,7 +27,7 @@ if(isset($_GET['id'])){
             <input type="text" name="name" id="name" class="form-control form-control-border" placeholder="Enter Service" value ="<?php echo isset($name) ? $name : '' ?>" required>
         </div>
         <div class="form-group">
-            <label for="category_ids" class="control-label">For Category <small><em>(Pet Types)</em></small></label>
+            <label for="category_ids" class="control-label">For Category <small><em>(Customer Types)</em></small></label>
             <select name="category_ids[]" id="category_ids" class="form-control form-control-border select2" multiple>
                 <?php 
                 $categories = $conn->query("SELECT * FROM category_list where delete_flag = 0 ".(isset($category_ids) && !empty($category_ids) ? " or id in ({$category_ids})" : "")." order by name asc");
@@ -51,7 +51,7 @@ if(isset($_GET['id'])){
     $(function(){
         $('#uni_modal').on('shown.bs.modal',function(){
             $('#category_ids').select2({
-                placeholder:"Please Select Pet Type(s) here.",
+                placeholder:"Please Select Customer Type(s) here.",
                 width:'100%',
                 dropdownParent:$('#uni_modal')
             })

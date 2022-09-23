@@ -1,0 +1,15 @@
+{
+    "name": "emmanuel/ovas",
+    "autoload": {
+        "psr-4": {
+            "Emmanuel\\Ovas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emmanuel",
+            "email": "emmanuel.nocum@cvsu.edu.ph"
+        }
+    ],
+    "require": {}
+}
